@@ -1,0 +1,82 @@
+{
+	"nodes":[
+		{
+			"name": "cern.ipt.Charlotte_Qin", 
+			"projects": ["IdeaSquare", 
+				"GrandChallenge"
+				],
+			"passions": ["Ecological Design"]
+		},
+
+		{
+			"name": "cern.ipt.Oday_Darwich", 
+			"nationality": "Lebanon",
+			"projects": ["Physics Meets Blockchain", 
+			 "IdeaSquare"
+			],
+			"passions": ["Blockchain","Open Science"]
+		},
+
+		{
+			"name": "cern.ipt.Simon_Olofsson", 
+			"nationality": "Sweden",
+			// "association": ["Lulea University of Technology"
+			// ],
+			"projects": "Knowledge Transfer",
+			"passions": ["photography", "journalism"]
+		},
+
+		{
+			"name": "cern.en.Melanie_Krawina",  
+			"nationality": "Austria",
+			"projects": ["R2E"
+			]
+		},
+		{
+			"name": "cern.ep.Manuel_Parra", 
+			"nationality": "Spain",
+			"projects": ["DUNE"
+			],
+			"passions": ["data engineering", "deep learning"]
+		},
+
+		{
+			"name": "cern.ep.Sabrina_Amrouche", 
+			"nationality": "Algeria",
+			"projects": ["ATLAS"
+			],
+			"passions": ["big data", "climate change"]
+		},
+		{
+			"name": "ATLAS",
+			"imports": ["cern.ep.Sabrina_Amrouche"]
+		},
+
+		{
+			"name": "IdeaSquare",
+			"imports": ["cern.ipt.Charlotte_Qin","cern.ipt.Oday_Darwich"]
+		},
+
+		{
+			"name": "R2E",
+			"imports": ["cern.en.Melanie_Krawina"]
+		},
+
+		{
+			"name": "Blockchain",
+			"imports": ["cern.ipt.Oday_Darwich"]
+		},
+
+		{
+			"name": "Open Science",
+			"imports": ["Charlotte Qin"]
+		},
+
+		{
+			"name": "University of Granada",
+			"imports": ["Manuel Parra"]
+		}
+	]
+
+
+}
