@@ -1,0 +1,46 @@
+{
+	"nodes":[
+		{
+			"name": "Charlotte Qin", 
+			"department": 1, 
+			"color":1, 
+			"nationality": "Canada",
+			"imports": ["university.ImperialCollegeLondon", 
+			 "IdeaSquare"
+			]
+		},
+
+		{
+			"name": "Oday Darwich", 
+			"department": 1, 
+			"color":1, 
+			"nationality": "Lebanon",
+			"imports": ["University of Geneva", 
+			 "IdeaSquare"
+			]
+		},
+
+		{
+			"name": "Simon Olofsson", 
+			"department": 1, 
+			"color":1, 
+			"nationality": "Sweden",
+			"imports": ["Lulea University of Technology", 
+			 "Knowledge Transfer"
+			]
+		},
+
+		{
+			"name": "Sebastien Tetaud", 
+			"department": 3, 
+			"color":2, 
+			"nationality": "France",
+			"imports": ["CERN", 
+			 "Technology"
+			]
+		}
+
+	]
+
+
+}

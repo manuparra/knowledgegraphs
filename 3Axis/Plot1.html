@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html class="gr__bl_ocks_org"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Hive Plots</title>
+
+<style>
+
+@import url(style.css);
+
+  .axis {
+    stroke: #000;
+    stroke-width:1.5px;
+  }
+
+  .link {
+    fill: none;
+    stroke-width: 1.5px;	
+    stroke-opacity: 0.8;
+  }	
+
+  .node {
+  	stroke: #000;
+    stroke-width: 1.5px;
+  }
+
+  .link.turnedOn {
+    stroke-width: 3px;
+  }
+
+  .link.turnedOff {
+    stroke-opacity: 0.3;
+    stroke-width: 1px;
+  }
+
+  .node.turnedOn {
+    stroke: red;
+    stroke-width: 3px;
+  }
+
+</style>
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+  <header>
+  <aside>September 3, 2018</aside>
+  <a href="http://ideasquare.web.cern.ch/" rel="organization">IdeaSquare</a>
+</header>
+
+<h1>Visualizing Collaborations</h1>
+
+<aside>This <b>hive plot</b>, a type of node-link diagram, shows the dependency graph of the collaborations at CERN.
+
+<p>Each dot represents a class, and each line represents an import statement from one class to another. Related classes share the same color.
+
+</p><p>Mouseover for more details, and scroll down to read more about the use of hive plots to visualize networks.
+
+</p><p>Built with <a href="http://d3js.org/">d3.js</a>.</p></aside>
+
+<p id="info">Showing 764 dependencies among 220 classes.</p><p id="chart">
+
+
+<script src="./bl.ocks.org_files/d3.v3.min.js"></script>
+
+<script src="./bl.ocks.org_files/d3.hive.min.js"></script>
+
+<script>
+
+var width = 960,
+    height = 500,
+    innerRadius = 40,
+    outerRadius = 240;
+
+var angle = d3.scale.ordinal()
+              .domain(d3.range(4))
+              .rangePoints([0, 2 * Math.PI]),
+    radius = d3.scale.linear()
+              .range([innerRadius, outerRadius]),
+    color = d3.scale.category20b()
+              .domain(d3.range(20));
+
+// x, the axis number, y is the distance on
+var nodes = [
+  {x: 0, y: .1},
+  {x: 0, y: .2},
+  {x: 0, y: .3},
+  {x: 1, y: .1},
+  {x: 1, y: .2},
+  {x: 1, y: .3},
+  {x: 2, y: .1},
+  {x: 2, y: .2},
+  {x: 2, y: .3}
+];
+
+
+var links = [
+  {source: nodes[0], target: nodes[2]},
+  {source: nodes[0], target: nodes[3]},
+  {source: nodes[1], target: nodes[2]},
+  {source: nodes[1], target: nodes[3]},
+  {source: nodes[3], target: nodes[0]},
+  {source: nodes[4], target: nodes[0]},
+  {source: nodes[5], target: nodes[1]}
+];
+
+
+var info = d3.select("#info")
+      .text(defaultInfo = "Showing " +  " dependencies among " + " classes.");
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+svg.selectAll(".axis")
+    .data(d3.range(3))
+    .enter().append("line")
+    .attr("class", "axis")
+    .attr("transform", function(d) { return "rotate(" + degrees(angle(d)) + ")"; })
+    .attr("x1", radius.range()[0])
+    .attr("x2", radius.range()[1]);
+
+//draw links
+svg.selectAll(".link")
+    .data(links)
+  .enter().append("path")
+    .attr("class", "link")
+    .attr("d", d3.hive.link()
+      .angle(function(d) { return angle(d.x); })
+      .radius(function(d) { return radius(d.y); }))
+    .style("stroke", function(d) { return color(d.source.x); })
+    .on("mouseover", linkMouseover)
+    .on("mouseout", mouseout);
+
+// draw nodes
+svg.selectAll(".node")
+    .data(nodes)
+  .enter().append("circle")
+    .attr("class", "node")
+    .attr("transform", function(d) { return "rotate(" + degrees(angle(d.x)) + ")"; })
+    .attr("cx", function(d) { return radius(d.y); })
+    .attr("r", 5)
+    .style("fill", function(d) { return color(d.x); })
+    .on("mouseover", nodeMouseover)
+    .on("mouseout", mouseout);
+
+// highlight link and connected nodes on mouseover
+function linkMouseover(d) {
+  svg.selectAll(".link")
+    .classed("turnedOn", function(dl) {
+      return dl === d;
+    })
+    .classed("turnedOff", function(dl) {
+      return !(dl === d);
+    })
+  svg.selectAll(".node")
+    .classed("turnedOn", function(dl) {
+      return dl === d.source || dl === d.target;
+    })
+  info.text( " hahah→ " );
+}
+
+// highlight node and connected links on mouseover
+function nodeMouseover(d) {
+  svg.selectAll(".link")
+    .classed("turnedOn", function(dl) {
+      return dl.source === d || dl.target === d;
+    })
+    .classed("turnedOff", function(dl) {
+      return !(dl.source === d || dl.target === d)
+    });
+  d3.select(this)
+    .classed("turnedOn", true);
+  info.text(defaultInfo);
+}
+
+// clear highlighted nodes or links
+function mouseout() {
+  svg.selectAll(".turnedOn").classed("turnedOn", false);
+  svg.selectAll(".turnedOff").classed("turnedOff", false);
+  info.text(d.node.name);
+}
+
+
+function degrees(radians) {
+  return radians / Math.PI * 180 - 90;
+}
+
+</script>
+
+<script type="text/javascript">( function(){ window.SIG_EXT = {}; } )()</script></body></html>
