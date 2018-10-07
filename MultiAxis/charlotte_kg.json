@@ -1,0 +1,71 @@
+[
+	{"name":"person.Manu",
+	 "size":3938,
+	 "imports":
+	 	[ 
+			"org.CERN",
+			"org.CERN.IdeaSquare",
+			"org.UGR"
+		]
+	},
+	
+	{"name":"person.Charlotte",
+		"size":344,
+		"imports":
+		[
+			"org.CERN.IdeaSquare"
+		
+		]
+	}, 
+	{"name":"org.CERN.IdeaSquare",
+		"size":3,
+		"imports":
+		[
+			"person.Manu",
+			"person.Charlotte"
+		]
+	},	
+	{"name":"org.CERN.IdeaSquare",
+		"size":5,
+		"imports":
+		[
+			"person.Manu",
+			"person.Charlotte"
+		]
+	},
+	{"name":"org.RCA.student",
+		"size":5,
+		"imports":
+		[
+			"person.Charlotte"
+		]
+	},
+	{"name":"org.CERN",
+		"size":673,
+		"imports":
+		[
+			"org.CERN.IdeaSquare",
+			"person.Manu",
+			"person.Charlotte"			
+		]
+	},
+	{"name":"org.RCA",
+		"size":671,
+		"imports":
+		[
+			"org.CERN",
+			"person.Charlotte"
+		]
+	},
+	{"name":"org.UGR",
+		"size":673,
+		"imports":
+		[
+			"person.Manu"
+		]
+	}
+	
+	
+	
+	
+]
