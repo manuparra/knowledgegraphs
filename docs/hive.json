@@ -1,6 +1,5 @@
 [
 	{"name":"person.ManuelParra",
-	"size":3938,
 	"projects":[
 			"org.CERN.EP_NU.DUNE",
 			"org.CERN.IdeaSquare",
@@ -14,7 +13,6 @@
 		]
 	},
 	{"name":"person.CharlotteQin",
-	"size":3938,
 	"projects":[
 			"org.CERN.IdeaSquare",
 			"org.RCA", 
@@ -29,7 +27,6 @@
 		]
 	},
 	{"name":"org.CERN.IdeaSquare",
-	"size":3938,
 	"projects":[
 			"org.CERN"
 	],
@@ -38,16 +35,15 @@
 		]
 	},
 	{"name":"org.RCA",
-	"size":3938,
 	"projects":[
-			"org.CERN"
 	],
 	"expertise":
 		[
+			"design.prototyping",
+			"design.graphics",
 		]
 	},
 	{"name":"org.CERN",
-	"size":3938,
 	"projects":[
 			"org.CERN.EP_NU.DUNE",
 			"org.CERN.EP_NU"
@@ -57,7 +53,6 @@
 		]
 	},
 	{"name":"org.CERN.EP_NU",
-	"size":3938,
 	"projects":[
 			"org.CERN",
 			"org.CERN.EP_NU.DUNE"
@@ -67,7 +62,6 @@
 		]
 	},	
 	{"name":"org.CERN.EP_NU.DUNE",
-	"size":3938,
 	"projects":[
 			"org.CERN",
 			"org.CERN.EP_NU"
@@ -77,7 +71,6 @@
 		]
 	},
 	{"name":"programming.Python",
-	"size":3938,
 	"projects":[
 	],
 	"expertise":
@@ -93,7 +86,6 @@
 		]
 	},
 	{"name":"degree.Design",
-	"size":3938,
 	"projects":[
 	],
 	"expertise":
