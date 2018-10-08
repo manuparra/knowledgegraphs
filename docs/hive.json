@@ -16,14 +16,16 @@
 	{"name":"person.CharlotteQin",
 	"size":3938,
 	"projects":[
-			"org.CERN",
 			"org.CERN.IdeaSquare",
-			"org.RCA"
+			"org.RCA", 
+			"org.Imperial"
 	],
 	"expertise":
 		[	
-			"degree.Design",
-			"programming.JS"		
+			"design.prototyping",
+			"design.graphics",
+			"programming.D3js",
+			"programming.Python"
 		]
 	},
 	{"name":"org.CERN.IdeaSquare",
