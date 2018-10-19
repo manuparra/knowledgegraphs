@@ -1,106 +1,110 @@
 [
-	{"name":"person.ManuelParra",
-	"projects":[
-			"org.CERN.EP_NU.DUNE",
-			"org.CERN.IdeaSquare",
-			"org.CERN.EP_NU",
-			"org.CERN"
-	],
-	"expertise":
-		[	
-			"programming.Python",
-			"programming.JS"		
-		]
-	},
-	{"name":"person.CharlotteQin",
-	"projects":[
-			"org.CERN.IdeaSquare",
-			"org.RCA", 
-			"org.Imperial"
-	],
-	"expertise":
-		[	
-			"design.prototyping",
-			"design.graphics",
-			"programming.D3js",
-			"programming.Python"
-		]
-	},
-	{"name":"org.CERN.IdeaSquare",
-	"projects":[
-			"org.CERN"
-	],
-	"expertise":
-		[
-		]
-	},
-	{"name":"org.RCA",
-	"projects":[
-	],
-	"expertise":
-		[
-			"design.prototyping",
-			"design.graphics"
-		]
-	},
-	{"name":"org.Imperial",
-	"projects":[
-	],
-	"expertise":
-		[
-			"design.prototyping",
-			"design.graphics"
-		]
-	},
-	
-	{"name":"org.CERN",
-	"projects":[
-			"org.CERN.EP_NU.DUNE",
-			"org.CERN.EP_NU"
-	],
-	"expertise":
-		[
-		]
-	},
-	{"name":"org.CERN.EP_NU",
-	"projects":[
-			"org.CERN",
-			"org.CERN.EP_NU.DUNE"
-	],
-	"expertise":
-		[
-		]
-	},	
-	{"name":"org.CERN.EP_NU.DUNE",
-	"projects":[
-			"org.CERN",
-			"org.CERN.EP_NU"
-	],
-	"expertise":
-		[
-		]
-	},
-	{"name":"programming.Python",
-	"projects":[
-	],
-	"expertise":
-		[
-		]
-	},
-	{"name":"programming.JS",
-	"size":3948,
-	"projects":[
-	],
-	"expertise":
-		[
-		]
-	},
-	{"name":"degree.Design",
-	"projects":[
-	],
-	"expertise":
-		[
-		]
-	}
-	
+  {
+    "name": "person.ManuelParra",
+    "projects": [
+      "org.CERN.EP_NU.DUNE",
+      "org.CERN.IdeaSquare",
+      "org.CERN.EP_NU",
+      "org.CERN"
+    ],
+    "expertise": [
+      "programming.Python",
+      "programming.JS"
+    ]
+  },
+  {
+    "name": "person.CharlotteQin",
+    "projects": [
+      "org.CERN.IdeaSquare",
+      "org.RCA",
+      "org.Imperial"
+    ],
+    "expertise": [
+      "design.prototyping",
+      "design.graphics",
+      "programming.D3js",
+      "programming.Python"
+    ]
+  },
+  {
+    "name": "org.CERN.IdeaSquare",
+    "projects": [
+      "org.CERN"
+    ],
+    "expertise": []
+  },
+  {
+    "name": "org.RCA",
+    "projects": [],
+    "expertise": [
+      "design.prototyping",
+      "design.graphics"
+    ]
+  },
+  {
+    "name": "org.Imperial",
+    "projects": [],
+    "expertise": [
+      "design.prototyping",
+      "design.graphics"
+    ]
+  },
+  {
+    "name": "org.CERN",
+    "projects": [
+      "org.CERN.EP_NU.DUNE",
+      "org.CERN.EP_NU"
+    ],
+    "expertise": []
+  },
+  {
+    "name": "org.CERN.EP_NU",
+    "projects": [
+      "org.CERN",
+      "org.CERN.EP_NU.DUNE"
+    ],
+    "expertise": []
+  },
+  {
+    "name": "org.CERN.EP_NU.DUNE",
+    "projects": [
+      "org.CERN",
+      "org.CERN.EP_NU"
+    ],
+    "expertise": []
+  },
+  {
+    "name": "programming.Python",
+    "projects": [],
+    "expertise": []
+  },
+  {
+    "name": "programming.JS",
+    "size": 3948,
+    "projects": [],
+    "expertise": []
+  },
+  {
+    "name": "programming.D3js",
+    "size": 3948,
+    "projects": [],
+    "expertise": []
+  },
+  {
+    "name": "degree.Design",
+    "projects": [],
+    "expertise": []
+  },
+  {
+    "name": "design.prototyping",
+    "size": 3948,
+    "projects": [],
+    "expertise": []
+  },
+  {
+    "name": "design.graphics",
+    "size": 3948,
+    "projects": [],
+    "expertise": []
+  }
 ]
