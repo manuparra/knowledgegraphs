@@ -28,9 +28,7 @@
   },
   {
     "name": "org.CERN.IdeaSquare",
-    "projects": [
-      "org.CERN"
-    ],
+    "projects": [],
     "expertise": []
   },
   {
@@ -51,26 +49,17 @@
   },
   {
     "name": "org.CERN",
-    "projects": [
-      "org.CERN.EP_NU.DUNE",
-      "org.CERN.EP_NU"
-    ],
+    "projects": [],
     "expertise": []
   },
   {
     "name": "org.CERN.EP_NU",
-    "projects": [
-      "org.CERN",
-      "org.CERN.EP_NU.DUNE"
-    ],
+    "projects": [],
     "expertise": []
   },
   {
     "name": "org.CERN.EP_NU.DUNE",
-    "projects": [
-      "org.CERN",
-      "org.CERN.EP_NU"
-    ],
+    "projects": [],
     "expertise": []
   },
   {
