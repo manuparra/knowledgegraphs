@@ -65,6 +65,7 @@ d3.json("hive.json", function(nodes) {
   nodes.forEach(function(source) {
     source.projects.forEach(function(targetName) {
       var target = nodesByName[targetName];
+      console.log(target);
       if (!source.source) source.connectors.push(source.source = {
         node: source,
         degree: 0
@@ -80,6 +81,7 @@ d3.json("hive.json", function(nodes) {
     });
     source.expertise.forEach(function(targetName) {
       var target = nodesByName[targetName];
+      console.log(target);
       if (!source.source) source.connectors.push(source.source = {
         node: source,
         degree: 0
