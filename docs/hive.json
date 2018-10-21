@@ -25,5 +25,75 @@
       "programming.D3js",
       "programming.Python"
     ]
+  },
+  {
+    "name": "org.CERN.IdeaSquare",
+    "projects": [],
+    "expertise": []
+  },
+  {
+    "name": "org.RCA",
+    "projects": [],
+    "expertise": [
+      "design.prototyping",
+      "design.graphics"
+    ]
+  },
+  {
+    "name": "org.Imperial",
+    "projects": [],
+    "expertise": [
+      "design.prototyping",
+      "design.graphics"
+    ]
+  },
+  {
+    "name": "org.CERN",
+    "projects": [],
+    "expertise": []
+  },
+  {
+    "name": "org.CERN.EP_NU",
+    "projects": [],
+    "expertise": []
+  },
+  {
+    "name": "org.CERN.EP_NU.DUNE",
+    "projects": [],
+    "expertise": []
+  },
+  {
+    "name": "programming.Python",
+    "projects": [],
+    "expertise": []
+  },
+  {
+    "name": "programming.JS",
+    "size": 3948,
+    "projects": [],
+    "expertise": []
+  },
+  {
+    "name": "programming.D3js",
+    "size": 3948,
+    "projects": [],
+    "expertise": []
+  },
+  {
+    "name": "degree.Design",
+    "projects": [],
+    "expertise": []
+  },
+  {
+    "name": "design.prototyping",
+    "size": 3948,
+    "projects": [],
+    "expertise": []
+  },
+  {
+    "name": "design.graphics",
+    "size": 3948,
+    "projects": [],
+    "expertise": []
   }
 ]
