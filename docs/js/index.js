@@ -48,7 +48,7 @@ var svg = d3.select("#chart").append("svg")
 
 
 // Load the data and display the plot!
-d3.json("hive.json", function(nodes) {
+d3.json("hive2.json", function(nodes) {
   var nodesByName = {},
     links = [],
     formatNumber = d3.format(",d"),
@@ -80,7 +80,7 @@ d3.json("hive.json", function(nodes) {
         target: target.target
       });
     });
-    source.expertise.forEach(function(targetName) {
+    source.institutes.forEach(function(targetName) {
       var target = nodesByName[targetName];
       console.log(target);
       console.log(targetName);	
