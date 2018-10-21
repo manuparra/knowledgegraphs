@@ -27,27 +27,6 @@
     ]
   },
   {
-    "name": "org.CERN.IdeaSquare",
-    "projects": [],
-    "expertise": []
-  },
-  {
-    "name": "org.RCA",
-    "projects": [],
-    "expertise": [
-      "design.prototyping",
-      "design.graphics"
-    ]
-  },
-  {
-    "name": "org.Imperial",
-    "projects": [],
-    "expertise": [
-      "design.prototyping",
-      "design.graphics"
-    ]
-  },
-  {
     "name": "org.CERN",
     "projects": [],
     "expertise": []
