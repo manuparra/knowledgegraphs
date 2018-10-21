@@ -1,0 +1,54 @@
+[
+  {
+    "name": ["ipt.CharlotteQin"],
+    "projects": ["CERN.IdeaSquare"],
+    "institutes": ["org.ImperialCollegeLondon","collab.RoyalCollegeofArt"],
+    "residence": ["London,UK"],
+    "contact": ["charlotte.qin@cern.ch"],
+    "expertise": ["design, prototyping, graphics, programming in python and D3js"]
+  },
+  {
+    "name": ["ep.ManuelParra"],
+    "projects": ["CERN.DUNE","CERN.IdeaSquare"],
+    "institutes": ["org.UniversityofGranada"],
+    "residence": ["Granada, Spain"],
+    "contact": ["manuel.parra@cern.ch"],
+    "expertise": ["data engineering, deep learning, programming in Python, JavaScript"]
+  },
+  {
+    "name": ["ipt.TuuliMariaUtriainen"],
+    "projects": ["CERN.IdeaSquare"],
+    "institutes": ["org.AaltoUniversity", "network.AaltoDesignFactory"],
+    "residence": ["Geneva, Swizterland"],
+    "contact": ["tuuli.maria.utriainen@cern.ch"],
+    "expertise": ["Interdisciplinary collaboration expert, design, engineering, prototyping"]
+  },
+  {
+    "name": ["CERN.IdeaSquare"],
+    "institutes": ["org.AaltoUniversity", "network.AaltoDesignFactory", "collab.RoyalCollegeofArt"],
+  },
+  {
+    "name": ["CERN.DUNE"],
+    "institutes": ["org.UniversityofGranada"],
+  },
+  {
+    "name": ["org.UniversityofGranada"],
+    "institutes": [],
+  },
+  {
+    "name": ["org.ImperialCollegeLondon"],
+    "institutes": [],
+  },
+  {
+    "name": ["collab.RoyalCollegeofArt"],
+    "institutes": [],
+  },
+  {
+    "name": ["org.AaltoUniversity"],
+    "institutes": [],
+  },
+  {
+    "name": ["network.AaltoDesignFactory"],
+    "institutes": [],
+  }      
+]

@@ -1,0 +1,11 @@
+Logic of the data structure and visualization (changes we need to make):
+1. each entity in json file contains multiple nodes (instead only one and every target would have to repeat itself, thiswill make the data a lot cleaner and easier to organize) 
+2. there will be three new arrays for x, y, z axes, each array corresponding to 'projects', 'people', and 'insitutions'
+	a) the index under 'name' will be stored as a node on y-axis
+	b) indices under 'projects' will be stored as nodes on x-axis
+	c) indices under 'institutions' will be stored as nodes on z-axis
+	d) repeated indices will be stored as the same node (but with multiple links, not sure if this will work)
+3. colour-coding: the class in front of the name "ep" "ipt" "org" "network" should assign different names to individual nodes	
+4. basic display when MouseOverNode will be: "[name] working on [projects], from [insitutes]"
+5. secondary display when MouseOverNode should be "resided in [residence], expertise are [expertise]"
+6. advanced info display when MouseOverNode will be a photograph of the person and the contact (hyperlink to email)
