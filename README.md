@@ -1,4 +1,4 @@
-# RCA Knowledge Graphs
+# RCA + CERN  Knowledge Graphs
 
 This repository contains the implementatioin and the information for the deployment of knowledge discovery and concept association graphs, using the visual tool proposed 
 in HIVE Plots (https://bost.ocks.org/mike/hive/). For our project we will use a structure based on entities (people) and a number of attributes 
@@ -44,3 +44,6 @@ JSON database, organized following the next (entity name, projects, institute, r
     "expertise": ["design, prototyping, graphics, programming in python and D3js"]
 }
 ```
+
+## Examples
+
