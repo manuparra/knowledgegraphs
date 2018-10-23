@@ -60,6 +60,9 @@ d3.json("hive2.json", function(nodes) {
     d.packageName = d.name;//.split(".")[1];	
     nodesByName[d.name] = d;
   });
+  
+  console.log(nodes);
+  
 
   // Convert the import lists into links with sources and targets.
   nodes.forEach(function(source) {

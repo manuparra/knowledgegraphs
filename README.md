@@ -32,6 +32,8 @@ JSON database, organized following the next (entity name, projects, expertise):
 
 ### Version 1.0
 
+**[Testing with this release]**
+
 JSON database, organized following the next (entity name, projects, institute, residence, contact, expertise):
 
 ```
