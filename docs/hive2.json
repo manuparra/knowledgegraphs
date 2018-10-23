@@ -25,11 +25,11 @@
   },
   {
     "name": ["CERN.IdeaSquare"],
-    "institutes": ["org.AaltoUniversity", "network.AaltoDesignFactory", "collab.RoyalCollegeofArt"],
+    "institutes": ["org.AaltoUniversity", "network.AaltoDesignFactory", "collab.RoyalCollegeofArt"]
   },
   {
     "name": ["CERN.DUNE"],
-    "institutes": ["org.UniversityofGranada"],
+    "institutes": ["org.UniversityofGranada"]
   },
   {
     "name": ["org.UniversityofGranada"],
@@ -37,18 +37,18 @@
   },
   {
     "name": ["org.ImperialCollegeLondon"],
-    "institutes": [],
+    "institutes": []
   },
   {
     "name": ["collab.RoyalCollegeofArt"],
-    "institutes": [],
+    "institutes": []
   },
   {
     "name": ["org.AaltoUniversity"],
-    "institutes": [],
+    "institutes": []
   },
   {
     "name": ["network.AaltoDesignFactory"],
-    "institutes": [],
+    "institutes": []
   }      
 ]
