@@ -87,11 +87,11 @@ d3.json("hive2.json", function(nodes) {
 	var distinct_institutes = lst_institutes.unique();
 
   distinct_expertise.forEach(function(d) {
-	  node.push({name:[d],expertise:[],institutes:[]});
+	  nodes.push({name:[d],expertise:[],institutes:[]});
   	}); 
 	
   distinct_institutes.forEach(function(d) {
-  	  node.push({name:[d],expertise:[],institutes:[]});
+  	  nodes.push({name:[d],expertise:[],institutes:[]});
     }); 
 
 
