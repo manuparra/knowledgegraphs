@@ -86,6 +86,15 @@ d3.json("hive2.json", function(nodes) {
 	var distinct_expertise = lst_expertise.unique();
 	var distinct_institutes = lst_institutes.unique();
 
+  distinct_expertise.forEach(function(d) {
+	  node.push({name:[d],expertise:[],institutes:[]});
+  	}); 
+	
+  distinct_institutes.forEach(function(d) {
+  	  node.push({name:[d],expertise:[],institutes:[]});
+    }); 
+
+
   // Construct an index by node name.
   nodes.forEach(function(d) {
     d.connectors = [];
