@@ -107,7 +107,7 @@ d3.json("hive2.json", function(nodes) {
 
   // Convert the import lists into links with sources and targets.
   nodes.forEach(function(source) {
-    source.projects.forEach(function(targetName) {
+    source.expertise.forEach(function(targetName) {
       var target = nodesByName[targetName];
       console.log(target);
       console.log(targetName);	    
