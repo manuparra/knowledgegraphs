@@ -46,13 +46,45 @@ var svg = d3.select("#chart").append("svg")
   .attr("transform", "translate(" + outerRadius * .20 + "," + outerRadius * .57 + ")");
 */
 
+// Function Unique (list)
+Array.prototype.unique = function() {
+	  return this.filter(function (value, index, self) { 
+	    return self.indexOf(value) === index;
+	  });
+};
 
 // Load the data and display the plot!
 d3.json("hive2.json", function(nodes) {
+	
+  // nodes contains all entities.
+  // First extract distinct expertise
+
+	
+  
+	
   var nodesByName = {},
     links = [],
     formatNumber = d3.format(",d"),
     defaultInfo;
+	
+  // Extract list of expertise	
+  var lst_expertise = [];	
+  nodes.forEach(function(d) {
+		d.forEach(function(e) {
+			lst_expertise.push(e)	
+		});
+	});
+
+  // Extract list of institution
+  var lst_institutions = [];	
+  nodes.forEach(function(d) {
+	  d.forEach(function(i) {
+	  lst_institutions.push(i)	
+  	  });
+  	});
+	
+	var distinct_expertise = lst_expertise.unique();
+	var distinct_institutions = lst_institutions.unique();
 
   // Construct an index by node name.
   nodes.forEach(function(d) {
