@@ -1,6 +1,6 @@
 [
   {
-    "name": ["ipt.CharlotteQin"],
+    "name": "ipt.CharlotteQin",
     "projects": ["CERN.IdeaSquare"],
     "institutes": ["org.ImperialCollegeLondon","collab.RoyalCollegeofArt"],
     "residence": ["London,UK"],
@@ -8,7 +8,7 @@
     "expertise": ["design","prototyping","graphics","programming in Python","D3js"]
   },
   {
-    "name": ["ep.ManuelParra"],
+    "name": "ep.ManuelParra",
     "projects": ["CERN.DUNE","CERN.IdeaSquare"],
     "institutes": ["org.UniversityofGranada"],
     "residence": ["Granada, Spain"],
@@ -16,7 +16,7 @@
     "expertise": ["data engineering","deep learning", "programming in Python", "JavaScript"]
   },
   {
-    "name": ["ipt.TuuliMariaUtriainen"],
+    "name": "ipt.TuuliMariaUtriainen",
     "projects": ["CERN.IdeaSquare"],
     "institutes": ["org.AaltoUniversity", "network.AaltoDesignFactory"],
     "residence": ["Geneva, Swizterland"],
