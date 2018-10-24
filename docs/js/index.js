@@ -70,21 +70,21 @@ d3.json("hive2.json", function(nodes) {
   // Extract list of expertise	
   var lst_expertise = [];	
   nodes.forEach(function(d) {
-		d.forEach(function(e) {
+		d.expertise.forEach(function(e) {
 			lst_expertise.push(e)	
 		});
 	});
 
   // Extract list of institution
-  var lst_institutions = [];	
+  var lst_institutes = [];	
   nodes.forEach(function(d) {
-	  d.forEach(function(i) {
-	  lst_institutions.push(i)	
+	  d.institutes.forEach(function(i) {
+	  lst_institutes.push(i)	
   	  });
   	});
 	
 	var distinct_expertise = lst_expertise.unique();
-	var distinct_institutions = lst_institutions.unique();
+	var distinct_institutes = lst_institutes.unique();
 
   // Construct an index by node name.
   nodes.forEach(function(d) {
